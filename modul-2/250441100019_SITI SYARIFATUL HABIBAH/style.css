@@ -1,0 +1,164 @@
+
+body{
+    margin:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background:#433e29;
+    color:#ffffff;
+}
+
+header{
+    background:#1c1c1c;
+    padding:20px;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a{
+    text-decoration:none;
+    margin:0;
+    color:#ffffff;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffbf00;
+}
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    padding:60px;
+}
+
+.hero img{
+    width:300px;
+    border-radius:15px;
+    border:3px solid #ffbf00;
+    background:white;
+}
+
+.hero h1{
+    color:#ffffff;
+}
+
+.hero p{
+    color:#d1d1d1;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    background:#ffffff;
+    color:#111111;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#ffbf00;
+}
+
+.benefit{
+    background:#1c1c1c;
+    text-align:center;
+    padding:50px;
+}
+
+.benefit-box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    background:#2c2c2c;
+    padding:20px;
+    border-radius:12px;
+    width:200px;
+    font-weight:bold;
+    color:#ffffff;
+    border:1px solid #ffbf00;
+}
+
+.price-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    padding:60px;
+}
+
+.price-section img{
+    width:250px;
+    border-radius:12px;
+    border:3px solid #ffbf00;
+    background:white;
+}
+
+.price{
+    color:#ffbf00;
+}
+
+.buy{
+    background:#1c1c1c;
+    text-align:center;
+    padding:60px;
+}
+
+.order-form{
+    max-width:400px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.order-form input,
+.order-form textarea,
+.order-form select{
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #d1d1d1;
+    background:#2c2c2c;
+    color:white;
+}
+
+textarea{
+    height:80px;
+    resize:none;
+}
+
+.btn-buy{
+    background:#ffffff;
+    color:#111111;
+    border:none;
+    padding:14px;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.btn-buy:hover{
+    background:#d1d1d1;
+}
+
+footer{
+    background:#1c1c1c;
+    text-align:center;
+    padding:15px;
+    color:#ffbf00;
+}
