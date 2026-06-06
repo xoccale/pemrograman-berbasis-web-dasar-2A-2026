@@ -1,0 +1,142 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    transition: 0.3s;
+    background: linear-gradient(135deg, #dbeafe 0%, #60a5fa 55%, #2563eb 100%);
+}
+
+html.dark body{
+    background: linear-gradient(135deg, #020617 0%, #111827 55%, #1e293b 100%) !important;
+    color: #e2e8f0 !important;
+}
+
+html.dark .main-card{
+    background: #1e293b !important;
+    color: #e2e8f0 !important;
+}
+
+html.dark table{
+    background: #1e293b !important;
+    color: #e2e8f0 !important;
+}
+
+html.dark tr{
+    background: #1e293b !important;
+    color: #e2e8f0 !important;
+}
+
+html.dark td{
+    background: #1e293b !important;
+    color: #e2e8f0 !important;
+    border-color: #334155 !important;
+}
+
+html.dark tr:hover td{
+    background: #334155 !important;
+}
+
+html.dark h1,
+html.dark h2{
+    color: #93c5fd !important;
+}
+
+html.dark p{
+    color: #cbd5e1 !important;
+}
+
+html.dark input,
+html.dark textarea,
+html.dark select{
+    background: #334155 !important;
+    color: #f8fafc !important;
+    border: 1px solid #475569 !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder{
+    color: #94a3b8 !important;
+}
+
+.dark-toggle{
+    width: 165px;
+    height: 48px;
+    border: none;
+    outline: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #f59e0b, #fb923c);
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.toggle-ball{
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 36px;
+    height: 36px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.35s;
+    font-size: 18px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+.toggle-label{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+html.dark .dark-toggle{
+    background: linear-gradient(135deg, #111827, #374151);
+}
+
+html.dark .toggle-ball{
+    transform: translateX(117px);
+    font-size: 0;
+}
+
+html.dark .toggle-ball::before{
+    content: "🌙";
+    font-size: 18px;
+}
+
+html.dark .toggle-label{
+    left: 22px;
+    right: auto;
+    font-size: 0;
+}
+
+html.dark .toggle-label::before{
+    content: "DARK";
+    font-size: 13px;
+}
+
+.stat-card{
+    transition: 0.3s;
+}
+
+.stat-card:hover{
+    transform: translateY(-4px);
+}
+
+html.dark .stat-card{
+    filter: brightness(0.9);
+}
